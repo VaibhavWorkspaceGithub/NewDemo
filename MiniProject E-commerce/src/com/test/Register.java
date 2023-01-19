@@ -7,11 +7,20 @@ import java.util.Scanner;
 
 public class Register {
 	
-	 String firstName;
-	 String lastName;
-	 String phone;
-	 String email;
+	String fn;
 	
+public String getFn() {
+		return fn;
+	}
+
+	public void setFn(String fn) {
+		this.fn = fn;
+	}
+
+	//	 String lastName;
+//	 String phone;
+//	 String email;
+//	
 //	
 //	public Register(String firstName, String lastName, String phone, String email) {
 //		super();
@@ -22,7 +31,7 @@ public class Register {
 //		
 //		
 //	}
-	public void registerUser() {
+	public String registerUser() {
 	Scanner scan = new Scanner(System.in);
 	 
 	System.out.println("Enter your first name ");
@@ -53,7 +62,7 @@ public class Register {
 		e.printStackTrace();
 	}
 	
-
+return fn;
 	}
 }
 
